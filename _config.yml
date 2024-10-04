@@ -28,7 +28,7 @@ url: "https://qyinm.github.io"
 github:
   username: qyinm # change to your GitHub username
 
-twitter:
+x:
   username: quseun # change to your Twitter username
 
 social:
@@ -38,7 +38,7 @@ social:
   email: qusseun@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/quseun # change to your Twitter homepage
+    - https://x.com/quseun # change to your Twitter homepage
     - https://github.com/qyinm # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
