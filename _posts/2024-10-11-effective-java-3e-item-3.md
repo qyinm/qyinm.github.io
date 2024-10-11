@@ -55,7 +55,7 @@ public static final field와 같이 하나뿐 임을 보장한다
 		한가지 예시로 스레드별로 다른 인스턴스를 넘길 수 있다.
 		<details>
 		<summary>예제 코드</summary>
-		<div markdown="1'>
+		<div markdown="1">
 		```java
 		public class Singleton {
 			// ThreadLocal을 이용해 각 스레드에 고유한 인스턴스를 저장
@@ -92,6 +92,7 @@ public static final field와 같이 하나뿐 임을 보장한다
 		```
 		</div>
 		</details>
+
 	2. 제네릭 싱글턴 팩터리로 만들 수 있다.
 		동일한 방식으로 여러타입의 객체를 관리 할 수 있으며, 재사용성이 높아진다.
 		<details>
