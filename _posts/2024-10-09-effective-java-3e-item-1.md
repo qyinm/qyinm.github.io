@@ -1,6 +1,6 @@
 ---
 title: '[Effective Jave 3/e] Item1 생성자 대신 정적 팩터리 메서드를 고려할'
-description: Spring 테스트 시 자주 사용되는 어노테이션과 함수, 기법들을 정리합니다.
+description: 'Effective Java 3/e 정리. 주관적 해석을 곁들인'
 date: 2024-10-09 23:43:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
