@@ -8,6 +8,17 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+  [ ] 나중에 graph view 넣을 예정
+  <!-- graph view -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* 그래프 스타일링 */
+        .link { stroke: #999; stroke-opacity: 0.6; }
+        .node { fill: #69b3a2; stroke: #fff; stroke-width: 1.5px; }
+    </style>
 
   {%- capture seo_tags -%}
     {% seo title=false %}

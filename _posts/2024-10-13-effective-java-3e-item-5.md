@@ -4,6 +4,9 @@ description: 'Effective Java 3/e 정리. 주관적 해석을 곁들인'
 date: 2024-10-13 13:11:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
+# 연관 관계 글 frontmatter
+related_posts:
+    - 2024-10-05-Junit5-정리.md
 ---
 
 정적 메서드와 정적 필드만을 담은 클래스를 만들 때 처음 만드려는 의도대로 만들자.
