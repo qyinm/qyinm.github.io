@@ -38,7 +38,7 @@ layout: compress
               {% include_cached update-list.html lang=lang %}
               {% include_cached trending-tags.html lang=lang %}
               <!-- [ ] graph view 처리 해줘야함. -->
-              <!-- {% include graph_view.html %} -->
+              {% include graph_view.html %}
             </div>
 
             {% for _include in layout.panel_includes %}
