@@ -53,8 +53,8 @@
       })
       .on("click", function(event, d) {
         <!-- 노드 클릭 시 링크 이동 -->
-        const targetUrl = `/posts/${d.self}`; // `/posts/` 경로 추가
-        window.location.href = targetUrl; // 같은 탭에서 링크로 이동
+        const targetUrl = `/posts/${d.self}`; <!-- `/posts/` 경로 추가 -->
+        window.location.href = targetUrl; <!-- 같은 탭에서 링크로 이동 -->
       })
       .call(d3.drag()
         .on("start", dragStarted)
@@ -112,7 +112,7 @@
         .attr("height", height);
 
       simulation.force("center", d3.forceCenter(width / 2, height / 2));
-      simulation.alpha(1).restart(); // 시뮬레이션 재시작
+      simulation.alpha(1).restart(); <!-- 시뮬레이션 재시작 -->
     });
   });
 </script>
