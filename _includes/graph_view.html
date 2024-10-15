@@ -56,7 +56,7 @@
       })
       .on("mouseout", function() {
         <!-- 마우스 아웃 시 링크 원래 색상으로 복구 -->
-        link.attr("stroke", "#999"); // 원래 색상으로 복구
+        link.attr("stroke", "#999"); <!-- 원래 색상으로 복구 -->
 
         d3.select("#tooltip").style("opacity", 0);
       })
@@ -73,16 +73,16 @@
 
     <!-- 링크 하이라이트 함수 -->
     function highlightLinks(nodeId) {
-      // 현재 노드와 연결된 링크를 찾기
+      <!-- 현재 노드와 연결된 링크를 찾기 -->
       const connectedLinks = link.filter(l => l.source.id === nodeId || l.target.id === nodeId);
-      // 하이라이트된 링크 색상 변경
+      <!-- 하이라이트된 링크 색상 변경 -->
       connectedLinks.attr("stroke", "orange");
 
-      // 연결된 노드들을 찾고, 그 노드들의 링크도 하이라이트
+      <!-- 연결된 노드들을 찾고, 그 노드들의 링크도 하이라이트 -->
       connectedLinks.each(function(d) {
         const targetNode = d.source.id === nodeId ? d.target.id : d.source.id;
         const targetLinks = link.filter(l => l.source.id === targetNode || l.target.id === targetNode);
-        targetLinks.attr("stroke", "orange"); // 연결된 링크 색상 변경
+        targetLinks.attr("stroke", "orange"); <!-- 연결된 링크 색상 변경 -->
         highlightLinks(targetNode);
       });
     }
