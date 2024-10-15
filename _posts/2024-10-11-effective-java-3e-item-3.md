@@ -4,6 +4,8 @@ description: 'Effective Java 3/e 정리. 주관적 해석을 곁들인'
 date: 2024-10-11 10:19:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
+related_posts:
+    - 2024-10-13-effective-java-3e-item-4.md
 ---
 
 ## Singleton

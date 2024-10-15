@@ -21,7 +21,7 @@
     <!-- 시뮬레이션 설정 -->
     const simulation = d3.forceSimulation(graphData.nodes)
       .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(80))
-      .force("charge", d3.forceManyBody().strength(-20))
+      .force("charge", d3.forceManyBody().strength(-30))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     <!-- 링크 생성 -->
@@ -30,7 +30,9 @@
       .selectAll("line")
       .data(graphData.links)
       .enter().append("line")
-      .attr("stroke-width", 2);
+      .attr("stroke", "#999") <!-- 연결선 색상 -->
+      .attr("stroke-opacity", 0.6) <!-- 연결선 불투명도 -->
+      .attr("stroke-width", 2); <!-- 연결선 두께 -->
 
     <!-- 노드 생성 -->
     const node = svg.append("g")
@@ -41,6 +43,10 @@
       .attr("r", 4)
       .attr("class", "node")
       .on("mouseover", function(event, d) {
+        <!-- [ ] 노드에 마우스 오버 시 링크 하이라이트 -->
+        nodeCount = node._groups[0].length;
+        <!-- highlightLinks(d.id); -->
+
         <!-- 툴팁 설정 -->
         const tooltip = d3.select("#tooltip")
           .style("opacity", 1)
@@ -49,9 +55,13 @@
           .style("top", (event.pageY - 28) + "px");
       })
       .on("mouseout", function() {
+        <!-- 마우스 아웃 시 링크 원래 색상으로 복구 -->
+        link.attr("stroke", "#999"); // 원래 색상으로 복구
+
         d3.select("#tooltip").style("opacity", 0);
       })
       .on("click", function(event, d) {
+
         <!-- 노드 클릭 시 링크 이동 -->
         const targetUrl = `/posts/${d.self}`; <!-- `/posts/` 경로 추가 -->
         window.location.href = targetUrl; <!-- 같은 탭에서 링크로 이동 -->
@@ -60,6 +70,22 @@
         .on("start", dragStarted)
         .on("drag", dragged)
         .on("end", dragEnded));
+
+    <!-- 링크 하이라이트 함수 -->
+    function highlightLinks(nodeId) {
+      // 현재 노드와 연결된 링크를 찾기
+      const connectedLinks = link.filter(l => l.source.id === nodeId || l.target.id === nodeId);
+      // 하이라이트된 링크 색상 변경
+      connectedLinks.attr("stroke", "orange");
+
+      // 연결된 노드들을 찾고, 그 노드들의 링크도 하이라이트
+      connectedLinks.each(function(d) {
+        const targetNode = d.source.id === nodeId ? d.target.id : d.source.id;
+        const targetLinks = link.filter(l => l.source.id === targetNode || l.target.id === targetNode);
+        targetLinks.attr("stroke", "orange"); // 연결된 링크 색상 변경
+        highlightLinks(targetNode);
+      });
+    }
 
     <!-- 시뮬레이션 실행 시 위치 업데이트 -->
     simulation.on("tick", () => {

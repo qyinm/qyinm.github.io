@@ -4,6 +4,8 @@ description: 'Effective Java 3/e 정리. 주관적 해석을 곁들인'
 date: 2024-10-09 23:43:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
+related_posts:
+    - 2024-10-10-effective-java-3e-item-2.md
 ---
 
 우리가 보통 클래스의 인스턴스를 얻을 때 생성자를 이용하여 얻는다.
