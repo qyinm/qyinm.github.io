@@ -5,7 +5,7 @@ date: 2024-10-13 13:11:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
 related_posts:
-    - 2024-10-15-effective-java-3e-item-5.md
+    - effective-java-3e-item-5.md
 ---
 
 정적 메서드와 정적 필드만을 담은 클래스를 만들 때 처음 만드려는 의도대로 만들자.

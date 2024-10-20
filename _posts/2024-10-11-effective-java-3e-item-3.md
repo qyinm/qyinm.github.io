@@ -5,7 +5,7 @@ date: 2024-10-11 10:19:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
 related_posts:
-    - 2024-10-13-effective-java-3e-item-4.md
+    - effective-java-3e-item-4.md
 ---
 
 ## Singleton

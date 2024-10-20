@@ -5,7 +5,7 @@ date: 2024-10-10 23:49:00 +0900
 categories: [Java, Effective Java 3/E]
 tags: []
 related_posts:
-    - 2024-10-11-effective-java-3e-item-3.md
+    - effective-java-3e-item-3.md
 ---
 
 개발을 하면서 우리는 정적 팩터리 혹은 생성자에서 공통적인 불편함을 느낄 것이다.

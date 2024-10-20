@@ -14,7 +14,7 @@ module Jekyll
         
         # 날짜를 제외한 나머지 부분을 조인하여 반환
         parsed_name = parts[3..-1].join('-')
-        
+        puts parsed_name
         return parsed_name
     end
 
@@ -36,8 +36,8 @@ module Jekyll
 
         related_posts.each do |related|
           # 관련 포스트 제목을 찾기
-          related_post = site.posts.docs.find { |p| p.basename == related }
-          
+          related_post = site.posts.docs.find { |p| parse_filename(p.basename)+'.md' == related }
+
           if related_post
             graph_data << {
               source: post.data['title'],
