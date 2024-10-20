@@ -8,7 +8,7 @@ related_posts:
     - effective-java-3e-item-7.md
     - effective-java-3e-item-67.md
     - effective-java-3e-item-83.md
-    - effective-java-3e-item-50
+    - effective-java-3e-item-50.md
 ---
 
 Java로 개발을 하다보면 우리는 객체를 자주 생성한다.
