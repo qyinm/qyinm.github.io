@@ -5,7 +5,7 @@ date: 2024-10-28 23:33:00 +0900
 categories: [Experience, 우아한 테크코스]
 tags: ['우아한 테크코스 프리코스', '회고']
 related_posts:
-    - woowa-precourse7-1week.md
+    - woowa-precourse7-3week.md
 ---
 
 ## 프리코스 2주차 회고
