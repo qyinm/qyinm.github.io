@@ -5,6 +5,7 @@ date: 2024-10-21 23:33:00 +0900
 categories: [Experience, 우아한 테크코스]
 tags: ['우아한 테크코스 프리코스', '회고']
 related_posts:
+    - woowa-precourse7-2week.md
 ---
 
 ## 첫 인상
