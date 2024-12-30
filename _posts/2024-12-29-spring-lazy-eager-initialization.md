@@ -1,5 +1,5 @@
 ---
-title: '[Spring Framework] Bean 지연 초기화, 즉시 초기화'
+title: '[Spring🌱] Bean 지연 초기화, 즉시 초기화'
 description: 'Spring의 지연 초기화와 즉시 초기화의 차이를 확인해보자.'
 date: 2024-12-29 15:00:00 +0900
 categories: [Backend, Spring]
