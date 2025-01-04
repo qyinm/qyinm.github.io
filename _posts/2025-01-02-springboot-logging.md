@@ -493,7 +493,5 @@ public class CourseService {
 
 - [Spring Boot Logging 공식 문서](https://docs.spring.io/spring-boot/reference/features/logging.html)
 - [Spring Boot Logging 공식 문서 2](https://docs.spring.io/spring-boot/docs/2.1.8.RELEASE/reference/html/howto-logging.html)
-- [Logback 공식 문서](http://logback.qos.ch/documentation.html)
 - [Log4j2 공식 문서](https://logging.apache.org/log4j/2.x/manual/configuration.html)
-- [SLF4J 공식 문서](http://www.slf4j.org/manual.html)
 - [Baeldung - Guide to SLF4J with Spring Boot](https://www.baeldung.com/spring-boot-logging)
