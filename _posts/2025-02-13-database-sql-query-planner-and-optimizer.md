@@ -1,7 +1,7 @@
 ---
 title: '[DB⛁] explaing 활용한 SQL 쿼리플래너, 옵티마이저 이해'
 description: 'DB SQL query planner and optimizer'
-date: 2025-02-13 10:00:00 +0900
+date: 2025-02-13 12:41:00 +0900
 categories: [DB]
 tags: ['DB']
 mermaid: true
