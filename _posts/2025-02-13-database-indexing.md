@@ -1,5 +1,5 @@
 ---
-title: '[DB⛁] 인덱스 이해 및 활용: Postgres 중심 ⛁'
+title: '[DB⛁] 인덱스 이해 및 활용: Postgres을 곁들인'
 description: 'Postgres에서 인덱스의 개념과 종류, 생성 방법 및 성능 개선 효과를 살펴본다.'
 date: 2025-02-13 10:00:00 +0900
 categories: [DB]
